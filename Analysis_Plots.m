@@ -180,15 +180,14 @@ for k = 1:length(rootDir)
         end
         t = ([1:(size(growthN,1))])*Aqtime*SinkVel;
         inDex = [1:length(indx)];
-        indFx = {inDex(srtEdg<300) inDex(srtEdg>300 & srtEdg<500) inDex(srtEdg>500 & srtEdg<700) inDex(srtEdg>700 & srtEdg<900), inDex(srtEdg>900 & srtEdg<1100), inDex(srtEdg>1100 & srtEdg<1300) inDex(srtEdg>1300)};
-        zon1 = pi*(1500^2-1300^2).*phisV;
-        zon2 = pi*(1300^2-1100^2).*phisV;
-        zon3 = pi*(1100^2-900^2).*phisV;
-        zon4 = pi*(900^2-700^2).*phisV;
-        zon5 = pi*(700^2-500^2).*phisV;
-        zon6 = pi*(500^2-300^2).*phisV;
-        zon7 = pi*(300^2).*phisV;
-        indaRad = {zon1 zon2 zon3 zon4 zon5 zon6 zon7};
+        indFx = {inDex(srtEdg<250) inDex(srtEdg>250 & srtEdg<500) inDex(srtEdg>500 & srtEdg<750) inDex(srtEdg>750 & srtEdg<1000), inDex(srtEdg>1000 & srtEdg<1250), inDex(srtEdg>1250)};
+        zon1 = pi*(1500^2-1250^2).*phisV;
+        zon2 = pi*(1250^2-1000^2).*phisV;
+        zon3 = pi*(1000^2-750^2).*phisV;
+        zon4 = pi*(750^2-500^2).*phisV;
+        zon5 = pi*(500^2-250^2).*phisV;
+        zon6 = pi*(250^2).*phisV;
+        indaRad = {zon1 zon2 zon3 zon4 zon5 zon6};
         for indaFux= 1:length(indFx)
             for i = 1:length(indx)
                 yy2 = fillmissing([growthN{:,i}],'nearest');
@@ -238,7 +237,7 @@ for inj= 1:length(indFx)
     else
     end
     hold on
-    legend('<300 \mum','300-500 \mum', '500-700 \mum', '700-900 \mum', '900-1100 \mum', '1100-1200 \mum', '>1200 \mum')
+    legend('<250 \mum','250-500 \mum', '500-750 \mum', '750-1000 \mum', '1000-1250 \mum', '>1250 \mum')
 end
 %% Figure 2 b/f | Broken and intact diatoms drives a spatially heterogeneous biomass accumulation
 
@@ -1120,7 +1119,7 @@ for col=1:2 %1= colony level; 2= particle level
                         xt = get(gca, 'XTick');
                         ylabel('Frequency','FontSize',10)
                         xlabel('Oxygen (\mumM)','FontSize',10)
-                        title('Zone 500 \mumm)')
+                        title('Zone ... \mumm)')
                     else
                     end
                     
@@ -1146,7 +1145,7 @@ for col=1:2 %1= colony level; 2= particle level
                         xt = get(gca, 'XTick');
                         ylabel('Frequency','FontSize',10)
                         xlabel('Oxygen (\mumM)','FontSize',10)
-                        title('Zone 500 \mumm)')
+                        title('Zone ... \mumm)')
                     else
                     end
                     
@@ -1171,7 +1170,7 @@ for col=1:2 %1= colony level; 2= particle level
                         xt = get(gca, 'XTick');
                         ylabel('Frequency','FontSize',10)
                         xlabel('Oxygen (\mumM)','FontSize',10)
-                        title('Zone 500 \mumm)')
+                        title('Zone ... \mumm)')
                     else
                     end
                     
@@ -1196,7 +1195,7 @@ for col=1:2 %1= colony level; 2= particle level
                         xt = get(gca, 'XTick');
                         ylabel('Frequency','FontSize',10)
                         xlabel('Oxygen (\mumM)','FontSize',10)
-                        title('Zone 500 \mumm)')
+                        title('Zone ... \mumm)')
                     else
                     end
                     
@@ -1221,7 +1220,7 @@ for col=1:2 %1= colony level; 2= particle level
                         xt = get(gca, 'XTick');
                         ylabel('Frequency','FontSize',10)
                         xlabel('Oxygen (\mumM)','FontSize',10)
-                        title('Zone 500 \mumm)')
+                        title('Zone ... \mumm)')
                     else
                     end
                     
@@ -1246,7 +1245,7 @@ for col=1:2 %1= colony level; 2= particle level
                         xt = get(gca, 'XTick');
                         ylabel('Frequency','FontSize',10)
                         xlabel('Oxygen (\mumM)','FontSize',10)
-                        title('Zone 500 \mumm)')
+                        title('Zone ... \mumm)')
                     else
                     end
                 end
