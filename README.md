@@ -12,5 +12,7 @@ AFFILIATIONS: 1Department of Earth, Atmospheric & Planetary Sciences, Massachuse
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8126751.svg)](https://doi.org/10.5281/zenodo.8126751)
+
 
 
