@@ -1,7 +1,7 @@
 # SinkingDiatomParticles
 
 
-This repository contains the codes for the analysis of microscopy images, analytical chemistry analysis, and data analysis of the paper: 'Microscale dynamics promote segregated denitrification in diatom aggregates sinking in bulk oxygenated seawater' The paper titled 'Microscale dynamics promote segregated denitrification in diatom aggregates sinking slowly in bulk oxygenated seawater' available at https://www.biorxiv.org/content/10.1101/2022.09.26.509232v1.full.pdf
+This repository contains the codes for the analysis of microscopy images, analytical chemistry analysis, and data analysis of the paper: 'Microscale dynamics promote segregated denitrification in diatom aggregates sinking slowly in bulk oxygenated seawater' The paper titled 'Microscale dynamics promote segregated denitrification in diatom aggregates sinking slowly in bulk oxygenated seawater' available at https://www.biorxiv.org/content/10.1101/2022.09.26.509232v1.full.pdf
 
 AUTHORS: Davide Ciccarese1*, Omar Tantawi2, Irene Zhang1,3, Desiree Plata2, Andrew R. Babbin1*
 
@@ -11,6 +11,6 @@ AFFILIATIONS: 1Department of Earth, Atmospheric & Planetary Sciences, Massachuse
 
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7951302.svg)](https://doi.org/10.5281/zenodo.7951302)
+
 
 
